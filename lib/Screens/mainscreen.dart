@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   final List<String> images = [
-    "assets/images/18.png",
+    "assets/images/27.png",
     "assets/images/1.png",
     "assets/images/2.png",
     "assets/images/3.png",
@@ -73,17 +73,16 @@ class _MainScreenState extends State<MainScreen> {
     "assets/images/16.png",
     "assets/images/17.png",
     "assets/images/18.png",
-    "assets/images/1.png",
-    "assets/images/2.png",
-    "assets/images/3.png",
-    "assets/images/4.png",
-    "assets/images/5.png",
-    "assets/images/6.png",
-    "assets/images/7.png",
-    "assets/images/8.png",
-    "assets/images/9.png",
-    "assets/images/10.png",
-    "assets/images/11.png",
+    "assets/images/19.png",
+    "assets/images/20.png",
+    "assets/images/21.png",
+    "assets/images/22.png",
+    "assets/images/23.png",
+    "assets/images/24.png",
+    "assets/images/25.png",
+    "assets/images/26.png",
+    "assets/images/more.png",
+
   ];
 
   final List<String> titles = [
@@ -95,9 +94,6 @@ class _MainScreenState extends State<MainScreen> {
     "Commands starts with 'E'",
     "Commands starts with 'F'",
     "Commands starts with 'G'",
-    "Commands starts with 'H'",
-    "Commands starts with 'I'",
-    "Commands starts with 'J'",
     "Commands starts with 'H'",
     "Commands starts with 'I'",
     "Commands starts with 'J'",
@@ -117,7 +113,7 @@ class _MainScreenState extends State<MainScreen> {
     "Commands starts with 'X'",
     "Commands starts with 'Y'",
     "Commands starts with 'Z'",
-
+    "More Apps",
   ];
 
 

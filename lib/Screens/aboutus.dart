@@ -54,8 +54,6 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
 
-
-
     return Scaffold(
       appBar: AppBar(
         title: Text('About Git'),
@@ -63,41 +61,52 @@ class _AboutState extends State<About> {
       ),
       body: Padding(
         padding: const EdgeInsets.only(
-            top: 14.0, bottom: 14.0, left: 4, right: 4),
+            top: 10.0, bottom: 10.0, left: 4, right: 4),
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-                child: Container(
-                    child: Text("""Git is a distributed version control system that is widely used for managing and tracking changes to files and source code. It was created by Linus Torvalds in 2005 to aid in the development of the Linux kernel, but it has since become one of the most popular version control systems for software development.
+          child: Column(
+            children: [
+              ClipRRect(
+                  borderRadius: BorderRadius.circular(20.0),
+                  child: Image.asset('assets/images/27.png', width: 200,height: 200,)),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Center(
+                    child: Container(
+                        child: Text("""
+Linux is a free and open-source operating system kernel that serves as the foundation for various Linux distributions (often called distros). Developed by Linus Torvalds and released in 1991, Linux is known for its stability, security, and flexibility.
 
-    Here are some key concepts and terms related to Git:
+Here are some key points about Linux:
 
-    Repository: A repository, or repo, is a collection of files and their revision history. It can be located on a local machine or hosted on a remote server.
+Open Source: Linux is distributed under an open-source license, which allows users to access, modify, and distribute the source code freely. This encourages collaboration, customization, and continuous improvement.
 
-    Commit: A commit is a record of changes made to the repository. It represents a specific point in the history of the project. Each commit has a unique identifier and includes information about the changes made, such as the author, date, and a commit message.
+Kernel: Linux refers specifically to the kernel of the operating system. The kernel is responsible for managing hardware resources, providing core services, and facilitating communication between software and hardware components.
 
-    Branch: A branch is a parallel version of the repository that allows for independent development. Each branch can have its own commits and history. Branching is useful for working on new features or fixing bugs without affecting the main codebase.
+Linux Distributions: Linux distributions are complete operating systems built around the Linux kernel. Examples of popular Linux distributions include Ubuntu, Fedora, Debian, CentOS, and Arch Linux. Each distribution may have its own package manager, software repositories, and default configurations.
 
-    Merge: Merging is the process of combining changes from one branch into another. It integrates the commits from a source branch into a target branch, combining the changes made in both branches.
+Command Line Interface: Linux offers a powerful command-line interface (CLI), often called the shell, where users can interact with the system by entering commands. The most common shell in Linux is the Bash (Bourne Again Shell), but there are other options such as Zsh, Fish, and more.
 
-    Remote: A remote is a copy of a repository that is hosted on a server, allowing multiple developers to collaborate on the same project. Common remote hosting services include GitHub, GitLab, and Bitbucket.
+Package Management: Linux distributions use package managers to install, update, and manage software packages. Package managers handle dependencies, resolve conflicts, and provide a centralized repository of software packages. Examples of package managers include APT (Advanced Package Tool) for Debian-based distributions and YUM/DNF for Red Hat-based distributions.
 
-    Clone: Cloning creates a copy of a repository on a local machine. This allows developers to have their own local version of the project to work on and make changes.
+Multiuser and Multitasking: Linux is designed to be a multiuser operating system, allowing multiple users to simultaneously use the system and run processes independently. It supports multitasking, where multiple processes can run concurrently, utilizing the system resources efficiently.
 
-    Pull: Pulling is the process of updating a local repository with the latest changes from a remote repository. It fetches the changes and merges them into the current branch.
+Security: Linux is known for its robust security features. Access control mechanisms, file permissions, user management, and built-in security tools contribute to creating a secure computing environment. Regular security updates and patches are released to address vulnerabilities.
 
-    Push: Pushing is the process of sending local commits to a remote repository. It updates the remote repository with the latest changes made locally.
+Server and Embedded Systems: Linux is widely used in server environments due to its stability, scalability, and vast software ecosystem. It powers a significant portion of web servers, database servers, and cloud infrastructure. Linux is also commonly used in embedded systems, such as IoT devices, routers, smart TVs, and more.
 
-    Git provides a powerful set of features for collaboration, branching, merging, and tracking changes, making it an essential tool for software development teams. It is widely supported across different operating systems and has a vast ecosystem of tools and services built around it.""",
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.openSans(textStyle: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,)),
+Community and Support: Linux has a vibrant and active community of developers, contributors, and users who collaborate, share knowledge, and provide support through forums, mailing lists, and online communities. Documentation, tutorials, and online resources are widely available to help users learn and troubleshoot Linux-related topics.
+
+Linux has gained popularity across various domains due to its versatility, performance, and the principles of open-source software. It is used by individuals, organizations, and governments worldwide for desktop computing, servers, scientific research, mobile devices, and more.
+                        """,
+                          textAlign: TextAlign.justify,
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,)),
+                        )
                     )
-                )
-            ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
