@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:launch_review/launch_review.dart';
 import 'package:linux_commands/AdHelper/adshelper.dart';
 import 'package:linux_commands/Screens/aboutus.dart';
 import 'package:linux_commands/Screens/listscreen.dart';
@@ -140,6 +141,12 @@ class _MainScreenState extends State<MainScreen> {
                     Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: About()));
 
                   }
+                else if(index == 28)
+                {
+                    LaunchReview.launch(
+                      androidAppId: androidAppIdValue,
+                      iOSAppId: iOSAppIdValue,);
+                }
                 else
                   {
                     Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: ListScreen(listIndex : index)));

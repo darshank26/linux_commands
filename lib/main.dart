@@ -239,7 +239,7 @@ class _SplashScreenState extends State<IntroSplashScreen> {
                   const SizedBox(height: 100.0,),
                   ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset('assets/images/27.png', width: 150,height: 150,)),
+                      child: Image.asset('assets/images/27.png', width: 200,height: 200,)),
                   const SizedBox(height: 50.0,),
                   Center(child:Text(
                     'Linux Commands',
