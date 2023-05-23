@@ -3143,7 +3143,7 @@ class _ListScreenState extends State<ListScreen> {
   void _copyToClipboard(String text) {
     Clipboard.setData(ClipboardData(text: text));
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Git Command Copied to clipboard')),
+      SnackBar(content: Text('Linux Command $text Copied to clipboard')),
     );
   }
 
