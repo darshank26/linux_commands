@@ -8,6 +8,7 @@ import 'package:linux_commands/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -141,11 +142,9 @@ class _MainScreenState extends State<MainScreen> {
                     Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: About()));
 
                   }
-                else if(index == 28)
+                else if(index == 27)
                 {
-                    LaunchReview.launch(
-                      androidAppId: androidAppIdValue,
-                      iOSAppId: iOSAppIdValue,);
+                  launchURL();
                 }
                 else
                   {
@@ -198,4 +197,16 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 
+
+  void launchURL() async {
+    const url = 'https://play.google.com/store/apps/developer?id=Darshan+Komu';  // Replace with your desired URL
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
 }
+
+

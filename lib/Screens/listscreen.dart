@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:linux_commands/AdHelper/adshelper.dart';
-import 'package:linux_commands/Screens/detailscreen.dart';
 import 'package:linux_commands/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -602,6 +601,332 @@ class _ListScreenState extends State<ListScreen> {
      ];
 
 
+  final List<List<String>> data_19 = [
+    ['rmdir', 'Remove empty directories'],
+    ['rm', 'Remove files or directories'],
+    ['rarp', 'Reverse Address Resolution Protocol client'],
+    ['rarpd', 'Reverse Address Resolution Protocol daemon'],
+    ['read', 'Read a line from standard input'],
+    ['readarray', 'Read lines from a file into an array variable'],
+    ['readonly', 'Mark variables/functions as readonly'],
+    ['reboot', 'Reboot the system'],
+    ['rename', 'Rename files'],
+    ['renice', 'Alter priority of running processes'],
+    ['reset', 'Reset the terminal'],
+    ['rev', 'Reverse lines of a file'],
+    ['rmmod', 'Remove a module from the Linux Kernel'],
+    ['route', 'Manipulate IP routing tables'],
+    ['runcon', 'Run a command in specified security context'],
+    ['run-parts', 'Run scripts or programs in a directory'],
+    ['rsync', 'Remote file copy/synchronization program'],
+    ['rpm', 'RPM Package Manager'],
+    ['rs', 'runshell — Run a shell'],
+    ['rpcbind', 'Convert RPC program numbers into universal addresses'],
+    ['rpcinfo', 'RPC program number mapper'],
+    ['rsh', 'Remote shell'],
+    ['rsyncd', 'rsync in daemon mode'],
+    ['rvim', 'Vim editor with Ruby interface'],
+    ['readlink', 'Print resolved symbolic links or canonical file names'],
+    ['realpath', 'Print the resolved symbolic link target'],
+    ['resolvconf', 'Manage nameserver information'],
+    ['resize2fs', 'Extend or shrink an ext2/ext3/ext4 file system'],
+    ['return', 'Exit a shell function'],
+    ['rngd', 'Entropy Gathering Daemon'],
+    ['routed', 'Routing Information Protocol daemon'],
+    ['route', 'Show/manipulate the IP routing table'],
+    ['routef', 'Flush routes'],
+    ['rpcgen', 'RPC protocol compiler'],
+    ['rpc.mountd', 'NFS mount daemon'],
+    ['rpc.nfsd', 'NFS server daemon'],
+    ['rquotad', 'NFS remote quota server'],
+    ['readelf', 'Display information about ELF files'],
+    ['recode', 'Convert text between character sets'],
+    ['rename', 'Rename multiple files'],
+    ['renice', 'Alter priority of running processes'],
+    ['reset', 'Terminal initialization'],
+    ['resizecons', 'Change kernel idea of the console size'],
+    ['restore', 'Restore files or file systems from backups created by dump'],
+    ['rpcclient', 'Tool for executing client side MS-RPC functions'],
+    ['rpcgen', 'ANSI C RPC generator'],
+    ['rpcinfo', 'RPC server inquiry program'],
+    ['rquotad', 'remote quota server'],
+    ['rsync', 'a fast, versatile, remote (and local) file-copying tool'],
+    ['rtacct', 'kernel-based per-task network statistics'],
+    ['rtcwake', 'program to enter a system sleep state until specified wakeup time'],
+    ['runcon', 'run command with specified security context'],
+    ['runlevel', 'output previous and current runlevel'],
+    ['run-parts', 'run scripts or programs in a directory'],
+    ['run-postinsts', 'execute scripts in /etc/kernel/postinst.d'],
+  ];
+
+
+  final List<List<String>> data_20 = [
+    ['shutdown', 'Shutdown or restart the system'],
+    ['sleep', 'Delay for a specified amount of time'],
+    ['slocate', 'Find files using a secure database'],
+    ['sort', 'Sort lines of text files'],
+    ['source', 'Execute commands from a file in the current shell'],
+    ['split', 'Split a file into pieces'],
+    ['ssh', 'OpenSSH remote login client'],
+    ['ssh-keygen', 'SSH key pair generation, management, and conversion'],
+    ['stat', 'Display file or file system status'],
+    ['strace', 'Trace system calls and signals'],
+    ['su', 'Switch to another user identity'],
+    ['sudo', 'Execute a command as another user'],
+    ['sum', 'Print checksum and block counts for a file'],
+    ['systemctl', 'Control the systemd system and service manager'],
+    ['systemd-analyze', 'Analyze system boot-up performance'],
+    ['systemd-cat', 'Connect a pipeline or program\'s output with the journal'],
+    ['systemd-cgls', 'Recursively show control group contents'],
+    ['systemd-cgtop', 'Monitor control group resource usage'],
+    ['systemd-inhibit', 'Execute a program with an inhibition lock'],
+    ['systemd-notify', 'Send notification messages to systemd'],
+    ['systemd-nspawn', 'Spawn a new system manager namespace/container'],
+    ['systemd-path', 'Query various path settings'],
+    ['systemd-resolve', 'Resolve domain names, IPv4, and IPv6 addresses'],
+    ['systemd-run', 'Run programs in transient scope or service units'],
+    ['smbclient', 'FTP-like client to access SMB/CIFS resources on servers'],
+    ['snap', 'Package manager for snaps'],
+    ['snapcraft', 'Build and publish snaps'],
+    ['snmpbulkget', 'Retrieve a subtree of management values using SNMP GETBULK requests'],
+    ['snmpbulkwalk', 'Retrieve a subtree of management values using SNMP GETBULK requests'],
+    ['snmpcmd', 'SNMP management programs (get, set, etc.)'],
+    ['snmpconf', 'SNMP configuration data files'],
+    ['snmpget', 'Retrieve a particular SNMP value'],
+    ['snmpgetnext', 'Retrieve the next sequential object in a MIB'],
+    ['snmpinform', 'SNMP TRAP/INFORM message sender'],
+    ['snmpnetstat', 'SNMP remote network interface module'],
+    ['snmpset', 'Set an SNMP variable to a particular value'],
+    ['snmpstatus', 'SNMP management programs (get, set, etc.)'],
+    ['snmptable', 'Retrieve an SNMP table'],
+    ['snmptest', 'SNMP testing tool'],
+    ['snmptrap', 'Send an SNMP trap to a manager'],
+    ['snmpusm', 'SNMPv3 USM user management'],
+    ['snmpvacm', 'SNMP View-Based Access Control Model'],
+    ['soelim', 'Preprocess .so requests in groff input'],
+    ['sort', 'Sort lines of text files'],
+    ['split', 'Split a file into pieces'],
+    ['ss', 'Utility to investigate sockets'],
+    ['ssh', 'OpenSSH remote login client'],
+    ['ssh-add', 'Adds private key identities to the authentication agent'],
+    ['ssh-agent', 'Authentication agent'],
+    ['ssh-copy-id', 'Install your public key on a remote machine'],
+    ['ssh-keygen', 'SSH key generation, management, and conversion'],
+    ['ssh-keyscan', 'Retrieve SSH server public keys'],
+    ['ssl_client', 'Generate a generic SSL/TLS client'],
+    ['ssl_server', 'Generate a generic SSL/TLS server'],
+    ['start-pulseaudio-x11', 'Starts the PulseAudio sound server'],
+    ['stat', 'Display file or file system status'],
+    ['stdbuf', 'Modify buffering operations for command'],
+    ['strace', 'Trace system calls and signals'],
+    ['strings', 'Print the strings of printable characters in files'],
+    ['stty', 'Change and print terminal line settings'],
+    ['su', 'Switch to another user identity'],
+    ['sudo', 'Execute a command as another user'],
+    ['sum', 'Print checksum and block counts for a file'],
+    ['suspend', 'Suspend the system'],
+    ['sync', 'Synchronize cached writes to persistent storage'],
+    ['sysctl', 'Configure kernel parameters at runtime'],
+    ['syslogd', 'System logging daemon'],
+    ['systemctl', 'Control the systemd system and service manager'],
+    ['systemd-analyze', 'Analyze system boot-up performance'],
+    ['systemd-cat', 'Connect a pipeline or program\'s output with the journal'],
+    ['systemd-cgls', 'Recursively show control group contents'],
+    ['systemd-cgtop', 'Monitor control group resource usage'],
+    ['systemd-inhibit', 'Execute a program with an inhibition lock'],
+    ['systemd-notify', 'Send notification messages to systemd'],
+    ['systemd-nspawn', 'Spawn a new system manager namespace/container'],
+    ['systemd-path', 'Query various path settings'],
+    ['systemd-resolve', 'Resolve domain names, IPv4, and IPv6 addresses'],
+    ['systemd-run', 'Run programs in transient scope or service units'],
+    ['systemd-socket-activate', 'Socket activation tool'],
+    ['systemd-tmpfiles', 'Create and manage temporary files and directories'],
+    ['systemd-tty-ask-password-agent', 'System password prompt agent'],
+    ['systemd-umount', 'Unmount file systems'],
+
+  ];
+
+  final List<List<String>> data_21 = [
+
+    ['tail', 'Output the last part of files'],
+    ['tar', 'Manipulate archives in various formats'],
+    ['taskset', 'Set or retrieve the CPU affinity of a running process'],
+    ['tcpdump', 'Dump traffic on a network'],
+    ['tee', 'Read from standard input and write to standard output and files'],
+    ['telnet', 'User interface to the TELNET protocol'],
+    ['test', 'Evaluate conditional expressions'],
+    ['tftp', 'Trivial File Transfer Protocol client'],
+    ['time', 'Measure program resource usage'],
+    ['timeout', 'Run a command with a time limit'],
+    ['times', 'Print process times'],
+    ['top', 'Monitor system activity and processes'],
+    ['touch', 'Change file timestamps'],
+    ['tr', 'Translate characters'],
+    ['tracepath', 'Trace the network path to a remote host'],
+    ['traceroute', 'Print the route packets take to a network host'],
+    ['true', 'Do nothing, successfully'],
+    ['truncate', 'Shrink or extend the size of a file to a specified size'],
+    ['tsort', 'Topological sort'],
+    ['tty', 'Print the file name of the terminal connected to standard input'],
+    ['type', 'Determine the type of a command'],
+    ['tmux', 'Terminal multiplexer'],
+    ['tput', 'Terminal capability interface'],
+    ['trap', 'Run a command when a signal is set']
+
+    ];
+
+  final List<List<String>> data_22 = [
+
+    ['ulimit', 'Set or get the shell resource limits'],
+    ['umask', 'Set the file mode creation mask'],
+    ['umount', 'Unmount file systems'],
+    ['unalias', 'Remove alias definitions'],
+    ['uname', 'Print system information'],
+    ['unexpand', 'Convert spaces to tabs'],
+    ['uniq', 'Report or omit repeated lines'],
+    ['units', 'Convert units of measurement'],
+    ['unset', 'Remove variable or function names'],
+    ['unshar', 'Unpack shell archive scripts'],
+    ['until', 'Execute commands (until a condition is met)'],
+    ['useradd', 'Create a new user or update default new user information'],
+    ['userdel', 'Delete a user account and related files'],
+    ['usermod', 'Modify a user account'],
+    ['uucp', 'Copy files between systems'],
+    ['uuencode', 'Encode a binary file'],
+    ['uuidgen', 'Generate a UUID (universally unique identifier)'],
+    ['uudecode', 'Decode a uuencoded file'],
+    ['uustat', 'UUCP status inquiry and job control'],
+    ['uux', 'Execute a command remotely'],
+    ['unix2dos', 'Convert text file format from UNIX to DOS'],
+    ['unrar', 'Extract files from RAR archives'],
+    ['unshar', 'Unpack shell archive scripts'],
+    ['uptime', 'Show how long the system has been running']
+
+   ];
+
+  final List<List<String>> data_23 = [
+
+    ['vdir', 'Verbosely list directory contents'],
+    ['vi', 'Text editor'],
+    ['view', 'Read-only version of the vi editor'],
+    ['vmstat', 'Report virtual memory statistics'],
+    ['volname', 'Return the volume name of a device'],
+    ['vrfy', 'Verify that email addresses are deliverable'],
+    ['vsftpd', 'Very Secure FTP Daemon'],
+    ['vconfig', 'VLAN interface configuration'],
+    ['vigr', 'Edit the password or group files'],
+    ['vipw', 'Edit the password or group files'],
+    ['vmstat', 'Report virtual memory statistics'],
+    ['volname', 'Return the volume name of a device'],
+    ['vncserver', 'Start or stop a VNC (Virtual Network Computing) server'],
+    ['vagrant', 'Command-line interface for managing Vagrant environments'],
+    ['vnstat', 'Network traffic monitor'],
+    ['vgchange', 'Change attributes of a volume group'],
+    ['vgcreate', 'Create a volume group'],
+    ['vgdisplay', 'Display information about volume groups'],
+    ['vgextend', 'Add physical volumes to a volume group'],
+    ['vgreduce', 'Remove physical volumes from a volume group'],
+    ['vgremove', 'Remove a volume group'],
+    ['vgrename', 'Rename a volume group'],
+    ['vgs', 'Report information about volume groups'],
+    ['vlock', 'Lock a virtual console'],
+    ['vconfig', 'VLAN interface configuration'],
+    ['vpnc', 'Cisco-compatible VPN client'],
+    ['vim', 'Improved version of the vi text editor'],
+    ['vdir', 'Verbosely list directory contents'],
+    ['vmstat', 'Report virtual memory statistics'],
+    ['volname', 'Return the volume name of a device'],
+    ['vrfy', 'Verify that email addresses are deliverable']
+    ];
+
+
+  final List<List<String>> data_24 = [
+    ['w', 'Show who is logged on and what they are doing'],
+    ['wait', 'Wait for a process to complete and return its termination status'],
+    ['wall', 'Write a message to all users'],
+    ['wc', 'Print the number of lines, words, and bytes in files'],
+    ['wget', 'Retrieve files from the web'],
+    ['whatis', 'Display one-line manual page descriptions'],
+    ['whereis', 'Locate the binary, source, and manual page files for a command'],
+    ['which', 'Locate the executable file associated with a command'],
+    ['while', 'Execute commands (while a condition is met)'],
+    ['who', 'Show who is logged on'],
+    ['whoami', 'Print effective user ID'],
+    ['whois', 'Query the WHOIS database for domain registration information'],
+    ['wifi-menu', 'Interactive tool to connect to Wi-Fi networks'],
+    ['write', 'Send a message to another user'],
+    ['wpa_supplicant', 'Wi-Fi Protected Access (WPA) supplicant'],
+    ['wvdial', 'PPP dialer with built-in intelligence'],
+    ['wodim', 'Command-line CD/DVD recording program'],
+    ['wpaclean', 'WPA configuration file cleaner'],
+    ['wpagui', 'Graphical user interface for WPA supplicant'],
+    ['wpa_passphrase', 'Generate a WPA passphrase from an ASCII passphrase'],
+    ['wpa_supplicant', 'Wi-Fi Protected Access (WPA) supplicant'],
+    ['watch', 'Execute a program periodically, showing output fullscreen'],
+    ['wcscoll', 'Compare two wide-character strings'],
+    ['wdctl', 'Control the watchdog timer device'],
+    ['whiptail', 'Display dialog boxes from shell scripts'],
+    ['wpa_cli', 'Interactive command-line tool for WPA supplicant']
+    ];
+
+  final List<List<String>> data_25 = [
+    ['xargs', 'Execute commands from standard input'],
+    ['xdg-open', 'Open a file or URL in the user\'s preferred application'],
+    ['xev', 'Print contents of X events'],
+    ['xhost', 'Server access control program for X'],
+    ['xinput', 'Utility to configure and test X input devices'],
+    ['xkill', 'Kill a client by its X resource'],
+    ['xlsclients', 'List client applications running on a display'],
+    ['xmodmap', 'Modify keymaps and pointer button mappings in X'],
+    ['xmore', 'Plain text display program for X'],
+    ['xrandr', 'Primitive command line interface to RandR extension'],
+    ['xrdb', 'X server resource database utility'],
+    ['xset', 'User preference utility for X'],
+    ['xsetroot', 'Simple root window parameter setting utility'],
+    ['xterm', 'Terminal emulator for X'],
+    ['xvinfo', 'Print out X-Video extension adaptor information'],
+    ['xwd', 'X Window System window dumping utility'],
+    ['xwininfo', 'Window information utility for X'],
+    ['xxd', 'Hex dump or reverse engineer binary files'],
+    ['xz', 'Compress or decompress .xz and .lzma files'],
+    ['xzcat', 'Concatenate and expand compressed files']
+    ];
+
+  final List<List<String>> data_26 = [
+    ['yelp', 'Help browser for the GNOME desktop'],
+    ['yes', 'Output a string repeatedly until killed'],
+    ['yubikey-personalization', 'Program for personalizing YubiKeys'],
+    ['yum', 'Package manager for RPM-based Linux distributions'],
+    ['yum-builddep', 'Install build dependencies for RPM-based packages'],
+    ['yum-config-manager', 'Manage yum configuration options'],
+    ['yumdownloader', 'Download RPM packages from repositories'],
+    ['yuv4mpeg', 'Create or play YUV4MPEG streams']
+    ];
+
+  final List<List<String>> data_27 = [
+    ['zcat', 'Concatenate compressed files and print on the standard output'],
+    ['zcmp', 'Compare compressed files'],
+    ['zdiff', 'Compare compressed files'],
+    ['zegrep', 'Search possibly compressed files for a regular expression'],
+    ['zfgrep', 'Search possibly compressed files for a regular expression'],
+    ['zforce', 'Force a \'.gz\' extension on all gzip files'],
+    ['zgrep', 'Search possibly compressed files for a regular expression'],
+    ['zip', 'Package and compress files'],
+    ['zipcloak', 'Encrypt entries in a zip archive'],
+    ['zipdetails', 'Display the detailed information about a zip archive'],
+    ['zipgrep', 'Search files in a zip archive for a pattern'],
+    ['zipinfo', 'List detailed information about a zip archive'],
+    ['zipnote', 'Add or modify zip archive comments'],
+    ['zipsplit', 'Split a zip archive into smaller zip archives'],
+    ['zless', 'File pager for viewing compressed text files'],
+    ['zmore', 'File pager for viewing compressed text files'],
+    ['znew', 'Recompress .Z files to .gz files']
+
+  ];
+
+
+
+
   @override
   Widget build(BuildContext context) {
     if(widget.listIndex == 1) {
@@ -629,27 +954,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 1)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 2)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 3)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 4)));
-                      }
-
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -710,7 +1015,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 2) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Getting & Creating'),
+          title: Text('Commands starts with \'B\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -732,19 +1037,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 5)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 6)));
 
-                      }
-
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -806,7 +1099,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 3) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Basic Snapshotting'),
+          title: Text('Commands starts with \'C\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -828,46 +1121,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 7)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 8)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 9)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 10)));
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 11)));
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 12)));
-                      }
-                      else if (index == 6)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 13)));
-                      }
-                      else if (index == 7)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 14)));
-                      }
-                      else if (index == 8)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 15)));
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -929,7 +1183,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 4) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Branching & Merging'),
+          title: Text('Commands starts with \'D\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -951,47 +1205,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 16)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 17)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 18)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 19)));
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 20)));
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 21)));
-                      }
-                      else if (index == 6)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 22)));
-                      }
-                      else if (index == 7)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 23)));
-                      }
-                      else if (index == 8)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 24)));
-                      }
-
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1053,7 +1267,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 5) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Inspection & Comparison'),
+          title: Text('Commands starts with \'E\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1077,30 +1291,7 @@ class _ListScreenState extends State<ListScreen> {
                       ),
                     ),
                     child: ListTile(
-                      onTap: ()
-                      {
-                        if(index == 0)
-                        {
-                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 25)));
-                        }
-                        else if (index == 1)
-                        {
-                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 26)));
 
-                        }
-                        else if (index == 2)
-                        {
-                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 27)));
-                        }
-                        else if (index == 3)
-                        {
-                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 28)));
-                        }
-                        else if (index == 4)
-                        {
-                          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 29)));
-                        }
-                      },
                       title: Padding(
                         padding: const EdgeInsets.only(top: 8.0),
                         child: Text(row[0],
@@ -1163,7 +1354,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 6) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Handy Commands'),
+          title: Text('Commands starts with \'F\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1185,34 +1376,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 30)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 31)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 32)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 33)));
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 34)));
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 35)));
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1274,7 +1438,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 7) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Patching'),
+          title: Text('Commands starts with \'G\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1296,26 +1460,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 36)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 37)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 38)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 39)));
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1377,7 +1522,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 8) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Debugging'),
+          title: Text('Commands starts with \'H\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1399,22 +1544,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 40)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 41)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 42)));
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1476,7 +1606,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 9) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Guides'),
+          title: Text('Commands starts with \'I\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1498,13 +1628,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 43)));
-                      }
-                    },
+
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1566,7 +1690,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 10) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Emails'),
+          title: Text('Commands starts with \'J\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1588,26 +1712,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 44)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 45)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 46)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 47)));
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1669,7 +1774,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 11) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('External Systems'),
+          title: Text('Commands starts with \'K\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1691,18 +1796,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 48)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 49)));
 
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1764,7 +1858,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 12) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Administration'),
+          title: Text('Commands starts with \'L\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1786,43 +1880,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 50)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 51)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 52)));
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 53)));
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 54)));
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 55)));
-                      }
-                      else if (index == 6)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 56)));
-                      }
-                      else if (index == 7)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 57)));
-                      }
-
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1884,7 +1942,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 13) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Server Admin'),
+          title: Text('Commands starts with \'M\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -1906,18 +1964,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 58)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 59)));
 
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -1979,7 +2026,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 14) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Plumbing Commands'),
+          title: Text('Commands starts with \'N\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -2001,113 +2048,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 60)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 61)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 62)));
-
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 63)));
-
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 64)));
-
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 65)));
-
-                      }
-                      else if (index == 6)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 66)));
-
-                      }
-                      else if (index == 7)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 67)));
-
-                      }
-                      else if (index == 8)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 68)));
-
-                      }
-                      else if (index == 9)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 69)));
-
-                      }
-                      else if (index == 10)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 70)));
-
-                      }
-                      else if (index == 11)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 71)));
-
-                      }
-                      else if (index == 12)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 72)));
-
-                      }
-                      else if (index == 13)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 73)));
-
-                      }
-                      else if (index == 14)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 74)));
-
-                      }
-                      else if (index == 15)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 75)));
-
-                      }
-                      else if (index == 16)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 76)));
-
-                      }
-                      else if (index == 17)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 77)));
-
-                      }
-
-                      else if (index == 18)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 78)));
-
-                      }
-
-                      else if (index == 19)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 79)));
-
-                      }
-
-
-
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -2169,7 +2110,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 15) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Share & Update'),
+          title: Text('Commands starts with \'O\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -2191,48 +2132,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 80)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 81)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 82)));
-
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 83)));
-
-                      }
-                      else if (index == 4)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 84)));
-
-                      }
-                      else if (index == 5)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 85)));
-
-                      }
-                      else if (index == 6)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 86)));
-
-                      }
-                      else if (index == 7)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 87)));
-
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -2294,7 +2194,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 16) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Remote Commands'),
+          title: Text('Commands starts with \'P\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -2316,28 +2216,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 88)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 89)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 90)));
-
-                      }
-                      else if (index == 3)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 91)));
-
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -2399,7 +2278,7 @@ class _ListScreenState extends State<ListScreen> {
     else if(widget.listIndex == 17) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Remote Commands'),
+          title: Text('Commands starts with \'Q\''),
           centerTitle: true,
         ),
         body: ListView.builder(
@@ -2421,23 +2300,7 @@ class _ListScreenState extends State<ListScreen> {
                     ),
                   ),
                   child: ListTile(
-                    onTap: ()
-                    {
-                      if(index == 0)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 92)));
-                      }
-                      else if (index == 1)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 93)));
 
-                      }
-                      else if (index == 2)
-                      {
-                        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: DetailScreen(listIndex: index,value: 94)));
-
-                      }
-                    },
                     title: Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Text(row[0],
@@ -2497,6 +2360,773 @@ class _ListScreenState extends State<ListScreen> {
       );
     }
 
+    else if(widget.listIndex == 18) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'R\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_19.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_19[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 19) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'S\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_20.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_20[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 20) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'T\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_21.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_21[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 21) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'U\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_22.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_22[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 22) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'V\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_23.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_23[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 23) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'W\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_24.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_24[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 24) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'X\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_25.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_25[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 25) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'Y\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_26.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_26[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+    else if(widget.listIndex == 26) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Commands starts with \'Z\''),
+          centerTitle: true,
+        ),
+        body: ListView.builder(
+          itemCount: data_27.length,
+          itemBuilder: (BuildContext context, int index) {
+            List<String> row = data_27[index];
+            return Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ksecondcolor,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 0.5, // Set border width
+                    ),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //                 <--- border radius here
+                    ),
+                  ),
+                  child: ListTile(
+
+                    title: Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(row[0],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,))
+                      ),
+                    ), // Display item name
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(row[1],
+                          style: GoogleFonts.openSans(textStyle: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600,))
+                      ),
+                    ),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+
+                        IconButton(
+                          icon: Icon(Icons.copy, color: Colors.white, size: 20),
+                          onPressed: () {
+                            _copyToClipboard(
+                                row[0]); // Copy the description to clipboard
+                          },
+                        ),
+
+                        IconButton(
+                          icon: Icon(Icons.share, color: Colors.white, size: 20,),
+                          onPressed: () {
+                            _share(row[0]); // Share the additional information
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (_isBannerAdReady)
+              Container(
+                width: _bannerAd.size.width.toDouble(),
+                height: _bannerAd.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              ),
+          ],
+        ),
+
+      );
+    }
+
+
     else
     {
       return Container();
@@ -2506,6 +3136,9 @@ class _ListScreenState extends State<ListScreen> {
   void _share(String text) {
     Share.share(text); // Share the provided text
   }
+
+
+
 
   void _copyToClipboard(String text) {
     Clipboard.setData(ClipboardData(text: text));
